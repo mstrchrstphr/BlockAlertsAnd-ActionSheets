@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     LICENSE
   }
   s.authors      = { "Gustavo Ambrozio" => "", "Christopher Constable" => "chris@futura.io" }
-  s.source       = { :git => "https://github.com/mstrchrstphr/BlockAlertsAnd-ActionSheets.git", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/mstrchrstphr/BlockAlertsAnd-ActionSheets.git", :tag => "1.0.1" }
   s.platform     = :ios, '5.0'
   s.source_files = 'BlockAlerts/**/*.{h,m}'
   s.resources    = "BlockAlerts/**/*.png"
