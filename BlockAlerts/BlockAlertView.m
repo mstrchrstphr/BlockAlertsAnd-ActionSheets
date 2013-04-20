@@ -160,35 +160,35 @@ static UIFont *buttonFont = nil;
             xOffset = width + kAlertViewBorder * 2;
             isSecondButton = NO;
         }
-        else if (i + 1 < _blocks.count)
-        {
-            // In this case there's another button.
-            // Let's check if they fit on the same line.
-            CGSize size = [title sizeWithFont:buttonFont 
-                                  minFontSize:10 
-                               actualFontSize:nil
-                                     forWidth:_view.bounds.size.width-kAlertViewBorder*2 
-                                lineBreakMode:UILineBreakModeClip];
-            
-            if (size.width < maxHalfWidth - kAlertViewBorder)
-            {
-                // It might fit. Check the next Button
-                NSArray *block2 = [_blocks objectAtIndex:i+1];
-                NSString *title2 = [block2 objectAtIndex:1];
-                size = [title2 sizeWithFont:buttonFont 
-                                minFontSize:10 
-                             actualFontSize:nil
-                                   forWidth:_view.bounds.size.width-kAlertViewBorder*2 
-                              lineBreakMode:UILineBreakModeClip];
-                
-                if (size.width < maxHalfWidth - kAlertViewBorder)
-                {
-                    // They'll fit!
-                    isSecondButton = YES;  // For the next iteration
-                    width = maxHalfWidth;
-                }
-            }
-        }
+//        else if (i + 1 < _blocks.count)
+//        {
+//            // In this case there's another button.
+//            // Let's check if they fit on the same line.
+//            CGSize size = [title sizeWithFont:buttonFont 
+//                                  minFontSize:10 
+//                               actualFontSize:nil
+//                                     forWidth:_view.bounds.size.width-kAlertViewBorder*2 
+//                                lineBreakMode:UILineBreakModeClip];
+//            
+//            if (size.width < maxHalfWidth - kAlertViewBorder)
+//            {
+//                // It might fit. Check the next Button
+//                NSArray *block2 = [_blocks objectAtIndex:i+1];
+//                NSString *title2 = [block2 objectAtIndex:1];
+//                size = [title2 sizeWithFont:buttonFont 
+//                                minFontSize:10 
+//                             actualFontSize:nil
+//                                   forWidth:_view.bounds.size.width-kAlertViewBorder*2 
+//                              lineBreakMode:UILineBreakModeClip];
+//                
+//                if (size.width < maxHalfWidth - kAlertViewBorder)
+//                {
+//                    // They'll fit!
+//                    isSecondButton = YES;  // For the next iteration
+//                    width = maxHalfWidth;
+//                }
+//            }
+//        }
         else if (_blocks.count  == 1)
         {
             // In this case this is the ony button. We'll size according to the text
