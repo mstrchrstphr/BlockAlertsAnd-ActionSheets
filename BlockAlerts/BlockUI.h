@@ -34,17 +34,17 @@
 #define kAlertViewBorder         10
 #define kAlertButtonHeight       44
 
-#define kAlertViewTitleFont             [UIFont boldSystemFontOfSize:20]
+#define kAlertViewTitleFont             [UIFont fontWithName:@"Avenir" size:18]
 #define kAlertViewTitleTextColor        [UIColor colorWithWhite:244.0/255.0 alpha:1.0]
 #define kAlertViewTitleShadowColor      [UIColor blackColor]
 #define kAlertViewTitleShadowOffset     CGSizeMake(0, -1)
 
-#define kAlertViewMessageFont           [UIFont systemFontOfSize:18]
+#define kAlertViewMessageFont           [UIFont fontWithName:@"Avenir" size:16]
 #define kAlertViewMessageTextColor      [UIColor colorWithWhite:244.0/255.0 alpha:1.0]
 #define kAlertViewMessageShadowColor    [UIColor blackColor]
 #define kAlertViewMessageShadowOffset   CGSizeMake(0, -1)
 
-#define kAlertViewButtonFont            [UIFont boldSystemFontOfSize:18]
+#define kAlertViewButtonFont            [UIFont fontWithName:@"Avenir Heavy" size:16]
 #define kAlertViewButtonTextColor       [UIColor whiteColor]
 #define kAlertViewButtonShadowColor     [UIColor blackColor]
 #define kAlertViewButtonShadowOffset    CGSizeMake(0, -1)
